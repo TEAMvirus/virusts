@@ -65,6 +65,8 @@ return {
   patterns = {
     "^[!/]boobs$",
     "^[!/]butts$"
+	"boobs$"
+	"butts$"
   }, 
   run = run 
 }
