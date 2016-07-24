@@ -186,6 +186,10 @@ return {
     "^[!/#]([Ww][Aa][Rr][Nn]) (.*)$",
     "^[!/#]([Uu][Nn][Ww][Aa][Rr][Nn])$",
     "^[!/#]([Uu][Nn][Ww][Aa][Rr][Nn]) (.*)$"
+	"([Ww][Aa][Rr][Nn])$"
+	"([Ww][Aa][Rr][Nn]) (.*)$"
+	"([Uu][Nn][Ww][Aa][Rr][Nn])$"
+	"([Uu][Nn][Ww][Aa][Rr][Nn]) (.*)$"
   }, 
   run = run 
 }
