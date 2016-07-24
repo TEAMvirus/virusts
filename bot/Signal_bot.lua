@@ -277,13 +277,13 @@ function create_config( )
     },
     sudo_users = {221633324,221176886},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[👑 Signal Bot 👑
+    about_text = [[👑 virus tg 👑
 An advanced administration bot based on TG-CLI written in Lua
 
 Admins:
 🔥 @alfred_regular [Founder & Developer] 🔥
 
-🔥 @vvirus [Developer & Manager] 🔥
+🔥 @vviruss [Developer & Manager] 🔥
 
 Special thanks to
 SEEDTEAM
