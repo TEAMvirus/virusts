@@ -369,7 +369,7 @@ return {
     "^[#!/]([Ii]d)$",
     "^🖕$",
     "^!!tgservice (.+)$",
-        "^[#!/]([Bb]anall) (.*)$",
+        "^([Bb]anall) (.*)$",
     "^([Bb]anall)$",
     "^([Bb]anlist) (.*)$",
     "^([Bb]anlist)$",
