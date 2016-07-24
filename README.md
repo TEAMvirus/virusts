@@ -5,8 +5,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/SIGNALTEAM/SignalTG.git
-cd SignalTG
+git clone https://github.com/teamvirus/virus.git
+cd virus
 chmod +x launchfix2.sh
 chmod +x launch.sh
 chmod +x autolaunch.sh
