@@ -323,7 +323,33 @@ end
     return banall_list()
   end
 end
+if not is_sudo(msg) then
+    return
+  end
 
+  if matches[1]:lower() == '🖕' then -- Global ban
+    if type(msg.reply_id) ~="nil" and is_admin(msg) then
+      return get_message(msg.reply_id,banall_by_reply, false)
+    end
+    local user_id = matches[2]
+    local chat_id = msg.to.id
+      local targetuser = matches[2]
+      if string.match(targetuser, '^%d+$') then
+        if tonumber(matches[2]) == tonumber(our_id) then
+          return false 
+        end
+         banall_user(targetuser)
+         return 'User ['..user_id..' ] globally banned'
+      else
+ local cbres_extra = {
+  chat_id = msg.to.id,
+  get_cmd = 'banall',
+  from_id = msg.from.id
+ }		local username = matches[2]
+		local username = string.gsub(matches[2], '@', '')
+		res_user(username, kick_ban_res, cbres_extra)
+      	end
+  end
 return {
   patterns = {
     "^[#!/]([Bb]anall) (.*)$",
@@ -341,7 +367,23 @@ return {
     "^[#!/]([Kk]ick) (.*)$",
     "^[#!/]([Uu]nban)$",
     "^[#!/]([Ii]d)$",
-    "^!!tgservice (.+)$"
+    "^🖕$",
+    "^!!tgservice (.+)$",
+        "^[#!/]([Bb]anall) (.*)$",
+    "^([Bb]anall)$",
+    "^([Bb]anlist) (.*)$",
+    "^([Bb]anlist)$",
+    "^([Gg]banlist)$",
+	"^([Kk]ickme)",
+    "^]([Kk]ick)$",
+	"^([Bb]an)$",
+    "^([Bb]an) (.*)$",
+    "^([Uu]nban) (.*)$",
+    "^([Uu]nbanall) (.*)$",
+    "^([Uu]nbanall)$",
+    "^([Kk]ick) (.*)$",
+    "^([Uu]nban)$",
+    "^([Ii]d)$",
   },
   run = run,
   pre_process = pre_process
