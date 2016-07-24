@@ -18,7 +18,7 @@ cd bin
 ./luarocks-5.2 install lub
 ./luarocks-5.2 install luaexpat
 cd $HOME
-cd SignalTG
+cd Virus
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
 ```
