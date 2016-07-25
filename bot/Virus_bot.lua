@@ -264,8 +264,6 @@ function create_config( )
     "Sticker",
     "Photo",
     "Aparat",
-    "invamour",
-    "Invsaman",
     "Del_Gban",
     "Date",
     "Badwords",
