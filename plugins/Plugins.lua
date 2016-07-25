@@ -62,7 +62,7 @@ local function list_plugins(only_enabled)
       end
       nact = nact+1
     end
-    if not only_enabled or status == '🔵' then
+    if not only_enabled or status == '🔴' then
       -- get the name
       v = string.match (v, "(.*)%.lua")
      -- text = text..v..'  '..status..'\n'
@@ -216,12 +216,12 @@ return {
           "!p * : reloads all plugins." },
           },
   patterns = {
-    "^#p$",
-    "^#p? (+) ([%w_%.%-]+)$",
-    "^#p? (-) ([%w_%.%-]+)$",
-    "^#p? (+) ([%w_%.%-]+) (chat)",
-    "^#p? (-) ([%w_%.%-]+) (chat)",
-    "^#p? (*)$",
+    "^#pls$",
+    "^#pl? (+) ([%w_%.%-]+)$",
+    "^#pl? (-) ([%w_%.%-]+)$",
+    "^#pl? (+) ([%w_%.%-]+) (chat)",
+    "^#pl? (-) ([%w_%.%-]+) (chat)",
+    "^#pls? (*)$",
     "^[!#](reload)$"
     },
   run = run,
